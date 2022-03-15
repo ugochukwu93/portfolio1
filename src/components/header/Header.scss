@@ -1,0 +1,93 @@
+.header {
+    
+    display: flex;
+    background-color: #343434;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    @media(max-width: 800px) {
+        // display: block;
+        height: 100vh;
+        background-image:  url('../../assets/EQOwW0.jpg');
+        width: 100%;
+    }
+    &-text {
+        width: 50%;
+        // display: inline-block;
+        margin: 280px 50px 0px 50px;
+        @media(max-width: 800px) {
+            margin: 0px 0px 0px 0px;
+            padding: 270px 5px 0px 20px;
+            width: 90%;
+           
+        }
+        button {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            color: #ffff;
+            background-color: #8aa7ca;
+            margin-top: 70px;
+            border: none;
+            cursor: pointer;
+        }
+
+        h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #DEDEDD;
+            font-size: 70px;
+            margin: 0px 0px;
+            color: #ffff;
+            @media(max-width:800px) {
+                font-size: 27px;
+                margin-bottom:20px ;
+                font-family: "Lucida Console", "Courier New", monospace;
+            }
+        }
+        h6 {
+            margin: 0px 0px;
+            color: #DEDEDD;
+            font-size: 35px;
+            color: #ffff;
+            @media(max-width: 800px) {
+                font-size: 25px;
+                font-family: "Lucida Console", "Courier New", monospace;
+            }
+        }
+    }
+    &-imgContainer {
+        width: 50%;
+        background-image: url('../../assets/png-transparent-printed-circuit-board-electrical-network-icon-line-board-blue-line-connection-angle-electronics-symmetry-thumbnail-removebg-preview.png');  
+        @media(max-width: 800px) {
+            display: none;
+        }
+    }
+    
+    
+}
+.header-ImageBorder {
+    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border-radius: 50%;
+    height: 330px;
+    width: 330px;
+    border: 5px solid #8aa7ca;
+    background-color: #343434;
+    @media(max-width: 800px) {
+        height: 230px;
+        width: 230px;
+        display: none;
+    }
+    img {
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        @media(max-width: 800px) {
+            border-radius: 50%;
+            display: none;
+        }
+    }
+}

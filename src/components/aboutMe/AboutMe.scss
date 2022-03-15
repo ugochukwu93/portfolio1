@@ -1,0 +1,107 @@
+.aboutMe {
+    background-color: #1d1b1b;
+    padding: 50px 0px 50px 200px;
+    // text-align: center;
+    @media(max-width: 800px) {
+        padding: 15px 5px 5px 5px;
+        // background-color: #ffff;
+        width: 100%;
+    }
+    
+    &-container {
+        position: relative;
+        @media(max-width: 800px) {
+            width: 100%;
+        }
+    }
+    &-Img {
+        width: 450px;
+        padding: 20px 20px 0px;
+        border: 5px solid #8aa7ca;
+        background-color: #1d1b1b;
+        // background-color: #8aa7ca;
+        border-radius: 5px;
+        @media(max-width: 800px) {
+            width: 100%;
+            padding: 5px 5px 0px;
+            border: none;
+            border-radius: 0;
+            background-color: #343434;
+        }
+        
+        img {
+            margin-right: 0px;
+        }
+    }
+    &-aboutImg {
+        @media(max-width:800px) {
+            width: 100%;
+            height: 400px;
+        }
+    }
+    &-flex{
+        display: flex;
+        padding: 10px 70px 10px 70px;
+        justify-content: space-between;
+        img {
+            margin: 0px 0px;
+            @media(max-width: 800px) {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    &-skills {
+        position: absolute;
+        bottom: 50px;
+        left: 530px;
+        color: rgb(97, 95, 95);
+        display: grid;
+        grid-template-columns: auto auto;
+
+        .grid-item {
+            padding: 10px;
+        }
+        img {
+            margin-right: 10px;
+        }
+        @media(max-width: 800px) {
+            display: none;
+        }
+    }
+    
+    &-text {
+        color: rgb(158, 152, 152);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #343434;
+        width: 600px;
+        line-height: 1.5;
+        padding: 25px;
+        text-align: justify;
+        position: absolute;
+        bottom: 220px;
+        border-radius: 5px;
+        left: 384px;
+        font-family: 'Courier New', Courier, monospace;
+        @media(max-width: 800px) {
+            padding: 5px;
+            position: absolute;
+            border-radius: 0;
+            left: 0px;
+            width: 100%;
+            margin-top: 200px;
+            top: 259px;
+            height: 390px;
+            border: none;
+        }
+        div {
+            border-radius: 5px;
+            border: 5px solid #8aa7ca;
+            padding: 20px;
+            @media(max-width:800px) {
+                padding: 10px;
+                border: none;
+            }
+        }
+    }
+}
