@@ -39,7 +39,7 @@ export default function Projects() {
             </div>
             <div className='projects-weatherApp' data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" 
-     onClick={()=> window.open("invoice-app-eight-lemon.vercel.app", "_blank")}>
+     onClick={()=> window.open("https://invoice-app-eight-lemon.vercel.app/", "_blank")}>
               <div className='projects-flex'>
                 <img src={GitLogo} alt='' height={25}
                  onClick={()=> window.open("https://github.com/ugochukwu93/Invoice-App", "_blank")}/>
@@ -58,7 +58,7 @@ export default function Projects() {
           
             <div className='projects-weatherApp' data-aos="fade-up"
      data-aos-anchor-placement="center-bottom"
-     onClick={()=> window.open("weather-app-vert-five.vercel.app", "_blank")}>
+     onClick={()=> window.open("https://weather-app-vert-five.vercel.app/", "_blank")}>
               <div className='projects-flex'>
                 <img src={GitLogo} alt='' height={25}
                 onClick={()=> window.open("https://github.com/ugochukwu93/WeatherApp", "_blank")}/>
