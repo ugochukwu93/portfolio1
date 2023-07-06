@@ -1,5 +1,5 @@
 .footer {
-    background-color: black;
+    background-color: #9999990e;
     padding: 20px;
     width: 100%;
     @media(max-width:600px) {
@@ -11,6 +11,11 @@
     &-container {
         display: flex;
         justify-content: center;
+        justify-content: space-between;
+        padding: 0px 880px;
+        @media(max-width:600px) {
+            padding: 0px 0px;
+        }
         img {
             margin-right: 10px;
             @media(max-width: 600px) {
@@ -20,11 +25,28 @@
         }
     }
     p {
-        color: #ffff;
+        color: #555555;
         text-align: center;
-        font-size: 12px;
+        font-size: 20px;
+        margin-top: 10px;
         @media(max-width: 600px) {
             margin-top: 10px;
         }
     }
 }
+.logo1 {
+    animation: logo1 2s ease infinite;
+  }
+  @keyframes logo1 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
+  }
+.logo {
+    animation: logo 2s ease infinite;
+  }
+  @keyframes logo {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
+  }

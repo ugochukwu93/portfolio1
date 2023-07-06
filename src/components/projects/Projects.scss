@@ -1,27 +1,57 @@
 .projects {
-    background-color: #25262a;
+    // background-color: #F5F5F5;
     // width: 100%;
     height: 100%;
-    text-align: center;
+    font-size: 18px;
+    // text-align: center;
+    margin: 150px 325px 200px 325px;
     @media(max-width: 600px) {
         // width: 100%;
         height: 50%;
-        margin: 400px 0px 0px 0px;
+        margin: 50px 10px 80px 10px;
+    }
+    img {
+        width: 100%;
+    }
+    &-img {
+        // align-items: center;
+
     }
     &-title {
-        color: #ffff;
-        padding: 30px;
-        font-size: 40px;
+        margin-top: 5px;
+            font-size: 20px;
+            margin-bottom: 60px;
+            color: #000000;
+            div {
+                background-color: #9FB0F5;
+                height: 5px;
+                margin: 10px 1150px 30px 0px;
+                @media(max-width: 600px) {
+                    margin: 10px 310px 0px 0px;
+
+                }
+            }
     }
     &-container {
-        display: inline-grid;
-        grid-template-columns: auto auto auto;
-        padding: 40px;
-        :hover {
-            box-shadow: 0 0 11px rgba(70, 68, 68, 0.2);  
-        }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        // display: inline-grid;
+        // grid-template-columns: auto auto auto;
+        padding: 70px;
+        background-color: #9999990e;
+        // width: 100%;
+        
+        // :hover {
+        //     box-shadow: 0 0 11px rgba(70, 68, 68, 0.2);  
+        // }
         @media(max-width: 600px) {
-            display: inline-block;
+            grid-row-gap: 10px;
+            grid-template-columns: repeat(1, 1fr);
+            // grid-template-rows: repeat(1, 1fr);
+            // display: block;
             padding: 0px;
             // overflow-y: auto;
             // width: 100%;
@@ -32,21 +62,25 @@
         }
     }
     &-weatherApp {
-        background-color: #2d2e32;
-        margin: 10px;
-        width: 300px;
-        height: 270px;
-        padding: 20px;
+        background-color: #F5F5F5;
+        margin: 0px;
+        width: 350px;
+        height: 400px;
+        padding: 10px;
         color: #7b7c85;
         line-height: 25px;
         cursor: pointer;
         @media(max-width: 800px){
            width: 350px;
-            height: 250px;
+            height: 420px;
             padding: 10px;
             margin: 15px 10px ;
         }
         
+    }
+    &-description {
+        text-align: center;
+        margin-top: 5px;
     }
     &-flex {
         display: flex;

@@ -1,63 +1,128 @@
 .header {
-    
     display: flex;
-    background-color: #343434;
+    justify-content: space-between;
     position: relative;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     @media(max-width: 800px) {
         // display: block;
-        height: 100vh;
+        height: 50vh;
         background-image:  url('../../assets/EQOwW0.jpg');
         width: 100%;
     }
     &-text {
         width: 50%;
+        overflow: hidden;
+        font-family: 'sans-serif';
         // display: inline-block;
-        margin: 280px 50px 0px 50px;
+        margin: 280px 0px 0px 150px;
         @media(max-width: 800px) {
             margin: 0px 0px 0px 0px;
-            padding: 270px 5px 0px 20px;
-            width: 90%;
+            padding: 180px 10px 0px 10px;
+            width: 100%;
            
         }
         button {
-            padding: 10px;
-            font-size: 20px;
+            padding: 15px;
+            font-size: 18px;
             border-radius: 5px;
-            color: #ffff;
-            background-color: #8aa7ca;
+            color: #000000;
+            font-weight: bold;
+            background-color: #9FB0F5;
             margin-top: 70px;
             border: none;
             cursor: pointer;
+            @media(max-width: 800px) {
+                font-size: 16px;
+                margin-top: 25px;
+                padding: 10px;
+                font-weight: bold;
+            }
         }
 
         h3 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #DEDEDD;
             font-size: 70px;
             margin: 0px 0px;
-            color: #ffff;
+            // font-family: sans-serif;
             @media(max-width:800px) {
                 font-size: 27px;
                 margin-bottom:20px ;
-                font-family: "Lucida Console", "Courier New", monospace;
+                // font-family: "Lucida Console", "Courier New", monospace;
             }
         }
         h6 {
-            margin: 0px 0px;
-            color: #DEDEDD;
             font-size: 35px;
-            color: #ffff;
-            @media(max-width: 800px) {
-                font-size: 25px;
-                font-family: "Lucida Console", "Courier New", monospace;
+            font-family: 'Raleway','sans-serif';
+            @media(max-width:800px) {
+                font-size: 6px;
             }
+            // font-family: sans-serif;
+        }
+        .writing-fade {
+            font-family: 'Raleway','sans-serif';
+            margin: 0px 0px;
+            color: #222222;
+            // font-size: 35px;
+            animation: writing-fade 20s linear infinite;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            @media(max-width: 800px) {
+                font-size: 23px;
+                font-family: 'Raleway','sans-serif';
+            }
+        }
+        @keyframes writing-fade {
+            0% {
+              opacity: 1;
+              width: 0;
+            }
+            50% {
+              opacity: 1;
+              width: 100%;
+            }
+            100% {
+              opacity: 1;
+              width: 0;
+            }
+        }
+        .writing-fade:first-child {
+            animation-delay: 0s;
+        }
+          
+        .writing-fade:last-child {
+            animation-delay: 10s;
+        }
+    }
+    &-bio {
+        display: flex;
+        line-height: 25px;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        width: 650px;
+        margin-top: 50px;
+        color: #0000009f;
+        @media(max-width: 800px) {
+            width: 400px;
+            margin-top: 35px;
+            font-size: 16px;
+            line-height: 20px;
         }
     }
     &-imgContainer {
-        width: 50%;
-        background-image: url('../../assets/png-transparent-printed-circuit-board-electrical-network-icon-line-board-blue-line-connection-angle-electronics-symmetry-thumbnail-removebg-preview.png');  
+        animation: imgContainer 2s ease 1;
+        @keyframes imgContainer {
+            30% { transform: scale(0.3); }
+            40%, 60% { transform: rotate(-0deg) scale(1.0); }
+            50% { transform: rotate(7deg) scale(1.0); }
+            70% { transform: rotate(0deg) scale(1.0); }
+            100% { transform: scale(1); }
+          }
+        // width: 50%;
+        // background-image: url('../../assets/png-transparent-printed-circuit-board-electrical-network-icon-line-board-blue-line-connection-angle-electronics-symmetry-thumbnail-removebg-preview.png');  
         @media(max-width: 800px) {
             display: none;
         }
@@ -68,12 +133,12 @@
 .header-ImageBorder {
     position: relative;
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 250px;
+    right: 230px;
     border-radius: 50%;
-    height: 330px;
-    width: 330px;
-    border: 5px solid #8aa7ca;
+    height: 430px;
+    width: 430px;
+    border: 10px solid #9FB0F5;
     background-color: #343434;
     @media(max-width: 800px) {
         height: 230px;
@@ -81,13 +146,20 @@
         display: none;
     }
     img {
+        width: 350px;
+        height: 350px;
         border-radius: 50%;
         position: absolute;
-        top: 25px;
-        left: 20px;
+        top: 30px;
+        left: 34px;
         @media(max-width: 800px) {
             border-radius: 50%;
             display: none;
         }
     }
 }
+.hithere {
+    animation: hithere 1s ease infinite;
+  }
+  
+  

@@ -67,7 +67,7 @@ export default function Navbar() {
           <li className="nav-item">
             <div className="nav-link" onClick={closeMenu}>
             <a href="#skill">
-              Skills
+              Work Experience
             </a>  
             </div>
           </li>

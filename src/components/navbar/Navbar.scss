@@ -6,13 +6,14 @@
     z-index: 1;
 	height: 80px;
 	width: 100%;
-	background: #2d2e32;
+	background: #F5F5F5;
 	color: white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2rem;
 	font-size: 1.2rem;
+	font-weight: bold;
 }
 
 .nav-logo {
@@ -46,7 +47,7 @@
 }
 a {
     text-decoration: none;
-    color: #ffff;
+    color: #222222;
 }
 a:hover {
 	color: #8aa7ca;
@@ -75,7 +76,7 @@ a:hover {
 	}
 
 	.nav-links.active {
-		background: rgba(131, 128, 128, 0.397);
+		background: rgba(131, 128, 128, 0.445);
 		left: 0;
 	}
 

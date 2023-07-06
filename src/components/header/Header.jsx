@@ -1,11 +1,11 @@
 import React from 'react'
-import MyPDF from '../../assets/files/Ugochukwu+Nwadike+(2).pdf'
+import MyPDF from '../../assets/files/Ugochukwu Nwadike CV (2) (1).pdf'
 import '../header/Header.scss'
-import headerBgImg from '../../assets/png-transparent-printed-circuit-board-electrical-network-icon-line-board-blue-line-connection-angle-electronics-symmetry-thumbnail-removebg-preview.png'
+import headerBgImg from '../../assets/creative-wallpaper-with-white-shapes.jpg'
 import HeaderImg from '../../assets/UgochukwuCroped.jpg'
-var sectionStyle = {
-    width: "50%",
-    height: "100%",
+let sectionStyle = {
+    // width: "50%",
+    // height: "100%",
     backgroundImage: `url(${headerBgImg})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
@@ -14,13 +14,18 @@ var sectionStyle = {
 
 export default function Header() {
   return (
-    <div className='header' id="home">
+    <div className='header' id="home"  style={sectionStyle}>
         <div className='header-text'>
-            <h3>Hello My Name Is</h3>
-            <h6>Ugochukwu Nwadike I am a <span>Front End Software Engineer</span></h6>
+            <h3 className='writing-fade'>Hello,</h3>
+            <h6 className='writing-fade'>My name is Ugochukwu Nwadike I am</h6>
+            <h6 className='writing-fade'>a Front-end software Engineer</h6>
+            <div className='header-bio'>
+              <p>I am passionate about creating exceptional user experiences through clean and efficient code.</p>
+              <p>One of my strengths as a frontend engineer is my ability to bridge the gap between design and development.</p>
+            </div>
             <a href={MyPDF} download><button>Get Resume</button></a>
         </div>
-        <div className='header-imgContainer' style={sectionStyle}>
+        <div className='header-imgContainer hiThere'>
             <div className='header-ImageBorder'>
                 <img src={HeaderImg} alt='phot' height={280}/>
             </div>
