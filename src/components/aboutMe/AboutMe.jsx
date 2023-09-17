@@ -10,7 +10,7 @@ export default function AboutMe() {
   return (
     <div>
         <div className='aboutMeHead'>
-            <h2>ABOUT ME</h2>
+            <h2>About me</h2>
             <div></div>
             <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
         </div>
@@ -18,8 +18,8 @@ export default function AboutMe() {
             <div>
                 <h2>Get to know me !</h2>
                 <p>As a front-end software engineer, my passion lies in creating visually appealing and user-friendly web applications. With a strong foundation in web technologies and a keen eye for design, I strive to deliver exceptional user experiences through clean and efficient code.</p>
-                <p>I am proficient in HTML, CSS, and JavaScript, and I constantly stay updated with the latest trends and best practices in front-end development. My goal is to ensure that websites and applications I develop are not only functional but also optimized for performance and accessibility.</p>
-                <p>Collaboration is an integral part of my work approach. I enjoy working closely with designers, back-end developers, and stakeholders to translate their visions into interactive and responsive web interfaces. I value effective communication and believe that understanding the user's needs and goals is crucial in crafting intuitive and engaging user interfaces.</p>
+                {/* <p>I am proficient in HTML, CSS, and JavaScript, and I constantly stay updated with the latest trends and best practices in front-end development. My goal is to ensure that websites and applications I develop are not only functional but also optimized for performance and accessibility.</p> */}
+                {/* <p>Collaboration is an integral part of my work approach. I enjoy working closely with designers, back-end developers, and stakeholders to translate their visions into interactive and responsive web interfaces. I value effective communication and believe that understanding the user's needs and goals is crucial in crafting intuitive and engaging user interfaces.</p> */}
                 <button onClick={handleEmailClick}>Contact me</button>
             </div>
             <div>

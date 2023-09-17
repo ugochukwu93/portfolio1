@@ -3,18 +3,18 @@ import MyPDF from '../../assets/files/Ugochukwu Nwadike CV (2) (1).pdf'
 import '../header/Header.scss'
 import headerBgImg from '../../assets/creative-wallpaper-with-white-shapes.jpg'
 import HeaderImg from '../../assets/UgochukwuCroped.jpg'
-let sectionStyle = {
-    // width: "50%",
-    // height: "100%",
-    backgroundImage: `url(${headerBgImg})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-  };
+// let sectionStyle = {
+//     // width: "50%",
+//     // height: "100%",
+//     backgroundImage: `url(${headerBgImg})`,
+//     backgroundRepeat: "no-repeat",
+//     backgroundSize: "cover",
+//   };
 
 
 export default function Header() {
   return (
-    <div className='header' id="home"  style={sectionStyle}>
+    <div className='header' id="home"  >
         <div className='header-text'>
             <h3 className='writing-fade'>Hello,</h3>
             <h6 className='writing-fade'>My name is Ugochukwu Nwadike I am</h6>

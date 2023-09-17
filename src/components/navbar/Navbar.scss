@@ -1,12 +1,12 @@
 
 .navbar {
-    box-shadow: 0px 0px 10px grey;
+    // box-shadow: 0px 0px 10px grey;
     position: sticky;
     top: 0;
     z-index: 1;
 	height: 80px;
 	width: 100%;
-	background: #F5F5F5;
+	background: #0B0C10;
 	color: white;
 	display: flex;
 	justify-content: space-between;
@@ -37,7 +37,7 @@
 }
 
 .nav-link:hover {
-	color: #8aa7ca;
+	// color: #8aa7ca;
 }
 
 .nav-icon {
@@ -47,10 +47,10 @@
 }
 a {
     text-decoration: none;
-    color: #222222;
+    color: #66FCF1;
 }
 a:hover {
-	color: #8aa7ca;
+	// color: #8aa7ca;
 }
 
 @media only screen and (max-width: 500px) {

@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 .header {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='800' preserveAspectRatio='none' viewBox='0 0 1920 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1207%26quot%3b)' fill='none'%3e%3crect width='1920' height='800' x='0' y='0' fill='rgba(11%2c 12%2c 16%2c 1)'%3e%3c/rect%3e%3cpath d='M1131.8412672771913 279.5082870568672L985.9666525640203 54.41172235046609 875.8868027609467 261.44180917645576z' fill='rgba(31%2c 40%2c 51%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-95.15242177802624 67.3064064964554L-39.22074666121477 276.0462597848318 169.51910662716165 220.1145846680203 113.58743151035016 11.374731379643926z' fill='rgba(31%2c 40%2c 51%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M460.022%2c835.198C513.408%2c833.077%2c559.737%2c801.944%2c586.801%2c755.878C614.261%2c709.137%2c622.583%2c651.425%2c595.616%2c604.397C568.528%2c557.158%2c514.476%2c534.894%2c460.022%2c534.789C405.364%2c534.683%2c352.567%2c557.572%2c323.516%2c603.871C292.551%2c653.221%2c284.902%2c716.518%2c314.51%2c766.693C343.711%2c816.179%2c402.608%2c837.478%2c460.022%2c835.198' fill='rgba(31%2c 40%2c 51%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1234.4735020299545 293.02864650159535L1022.4053591633012 203.01106053436058 932.3877731960665 415.0792034010138 1144.4559160627198 505.09678936824855z' fill='rgba(31%2c 40%2c 51%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M82.187%2c790.506C130.95%2c787.837%2c175.957%2c768.193%2c203.782%2c728.059C236.736%2c680.528%2c264.524%2c619.368%2c235.541%2c569.317C206.594%2c519.327%2c139.779%2c513.594%2c82.187%2c518.072C33.22%2c521.88%2c-7.864%2c549.241%2c-34.761%2c590.336C-65.16%2c636.781%2c-92.874%2c694.833%2c-64.872%2c742.761C-37.006%2c790.456%2c27.031%2c793.524%2c82.187%2c790.506' fill='rgba(31%2c 40%2c 51%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M234.49798334085278 177.04068849889657L288.0182485184906 303.12653183714895 414.104091856743 249.6062666595111 360.5838266791052 123.52042332125873z' fill='rgba(31%2c 40%2c 51%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1904.5007529871068 211.79094966988612L1790.7863419692032 80.97748378914508 1659.9728760884623 194.6918948070487 1773.6872871063658 325.50536068778973z' fill='rgba(31%2c 40%2c 51%2c 1)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1207'%3e%3crect width='1920' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
     display: flex;
     justify-content: space-between;
     position: relative;
-    height: 90vh;
+    height: 50vh;
     width: 100%;
     @media(max-width: 800px) {
         // display: block;
@@ -13,9 +15,8 @@
     &-text {
         width: 50%;
         overflow: hidden;
-        font-family: 'sans-serif';
         // display: inline-block;
-        margin: 280px 0px 0px 150px;
+        margin: 80px 0px 0px 150px;
         @media(max-width: 800px) {
             margin: 0px 0px 0px 0px;
             padding: 180px 10px 0px 10px;
@@ -23,14 +24,13 @@
            
         }
         button {
-            padding: 15px;
+            padding: 10px;
             font-size: 18px;
             border-radius: 5px;
-            color: #000000;
-            font-weight: bold;
-            background-color: #9FB0F5;
-            margin-top: 70px;
-            border: none;
+            color: #C5C6C7;
+            background-color: #9fb0f500;
+            margin-top: 30px;
+            border: 2px solid #66FCF1;
             cursor: pointer;
             @media(max-width: 800px) {
                 font-size: 16px;
@@ -59,9 +59,9 @@
             // font-family: sans-serif;
         }
         .writing-fade {
-            font-family: 'Raleway','sans-serif';
+            font-family: 'Roboto';
             margin: 0px 0px;
-            color: #222222;
+            color: #66FCF1;
             // font-size: 35px;
             animation: writing-fade 20s linear infinite;
             white-space: nowrap;
@@ -101,10 +101,10 @@
         justify-content: space-between;
         font-family: sans-serif;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         width: 650px;
-        margin-top: 50px;
-        color: #0000009f;
+        margin-top: 20px;
+        color: #C5C6C7;
         @media(max-width: 800px) {
             width: 400px;
             margin-top: 35px;
@@ -133,12 +133,12 @@
 .header-ImageBorder {
     position: relative;
     position: absolute;
-    top: 250px;
+    top: 200px;
     right: 230px;
     border-radius: 50%;
     height: 430px;
     width: 430px;
-    border: 10px solid #9FB0F5;
+    border: 10px solid #66FCF1;
     background-color: #343434;
     @media(max-width: 800px) {
         height: 230px;
