@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 .navbar {
     // box-shadow: 0px 0px 10px grey;
     position: sticky;
@@ -36,9 +36,6 @@
     cursor: pointer;
 }
 
-.nav-link:hover {
-	// color: #8aa7ca;
-}
 
 .nav-icon {
 	display: none;
@@ -49,14 +46,11 @@ a {
     text-decoration: none;
     color: #66FCF1;
 }
-a:hover {
-	// color: #8aa7ca;
-}
 
 @media only screen and (max-width: 500px) {
 	.navbar {
-		position: relative;
-        position: sticky;
+		// position: relative;
+        // position: sticky;
         top: 0;
         z-index: 1;
         
@@ -82,9 +76,17 @@ a:hover {
 
 	.nav-item {
 		padding: 5px 0;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 20px;
+		font-family: 'Raleway';
+		color: #66FCF1;
 	}
 
 	.nav-icon {
 		display: flex;
 	}
 }
+@media screen and (max-width: 640px) and (max-height: 1136px) {
+	/* Your styles for this screen size go here */
+  }

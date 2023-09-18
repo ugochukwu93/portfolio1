@@ -45,7 +45,7 @@ export default function Experience() {
         </div>
             <div className="experience-container">
                 {workExp.map((experience, index)=> (
-                    <div className='divider'>
+                <div className='divider'>
                     <div className='experience-work'>
                         <div className='experience-date'>
                             <div>

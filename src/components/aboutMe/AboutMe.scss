@@ -61,7 +61,7 @@ div {
         letter-spacing: 0.1em;
         margin-bottom: 20px;
         font-size: 20px;
-        color: #000000;
+        color: #66FCF1;;
         @media(max-width: 800px) {
             margin: 10px 10px;
         }
@@ -143,8 +143,8 @@ div {
         grid-template-columns: auto auto;
         @media(max-width: 800px) {
             grid-column-gap: 0px;
-            grid-row-gap: 5px;
-            width: 300px;
+            grid-row-gap: 10px;
+            width: 350px;
             margin: 0px 10px 0px 10px;
         }
 
@@ -185,8 +185,13 @@ div {
             text-align: center;
             font-size: 14px;
             color: #0B0C10;
+            font-weight: bold;
             padding: 15px;
             border-radius: 5px;
+            @media(max-width: 800px) {
+                padding: 5px;
+                border-radius: 0px;
+            }
         }
         @media(max-width: 800px) {
             grid-column-gap: 5px;
