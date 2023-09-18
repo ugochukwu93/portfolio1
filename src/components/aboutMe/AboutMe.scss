@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+$breakpoint-phone: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 992px;
+$breakpoint-desktop: 1200px;
+
 div {
     font-family: sans-serif;
     // font-weight: 500;
@@ -7,7 +12,7 @@ div {
 .aboutMeHead {
     font-size: 20px;
     margin: 100px 500px 0px 350px;
-    @media(max-width: 800px) {
+    @media only screen and (max-width: 800px) {
         margin: 50px 50px 0px 10px;
         font-size: 15;
     }
@@ -49,7 +54,7 @@ div {
     // background-color: #F5F5F5;
     margin: 50px 0px 50px 350px;
     // text-align: center;
-    @media(max-width: 800px) {
+    @media(max-width: 768px) {
         margin: 20px 0px 50px 350px;
         // padding: 15px 5px 5px 5px;
         display: inline;
